@@ -1,0 +1,15 @@
+<domain>
+	<applications />
+	<resources>
+		<jdbc-resource jndi-name="java:global/jdbc/applicationPetstoreDS"
+			pool-name="applicationPetstoreDS" object-type="user" enabled="true" />
+		<jdbc-connection-pool name="applicationPetstoreDS"
+			datasource-classname="org.apache.derby.jdbc.ClientDataSource"
+			res-type="javax.sql.DataSource">
+			<property name="url" value="jdbc:derby:memory:petstoreDS" />
+			<property name="User" value="app" />
+			<property name="Password" value="app" />
+			<property name="connectionAttributes" value=";create=true"/>
+		</jdbc-connection-pool>
+	</resources>
+</domain>
