@@ -34,9 +34,9 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false, length = 50)
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 50)
     private String name;
     @Column(nullable = false)
     @NotEmpty
