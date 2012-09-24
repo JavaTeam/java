@@ -8,6 +8,8 @@ import java.io.StringWriter;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -27,14 +29,13 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class NewCatalogRestServiceTest {
 
-	private static final Logger logger	=	Logger.getLogger(NewCatalogRestServiceTest.class);
+	private static final Logger logger	=	Logger.getLogger(NewCatalogRestServiceTest.class.getName());
 	
 	public JAXBContext jaxbContext;
 	
@@ -151,11 +152,11 @@ public class NewCatalogRestServiceTest {
 		// to see later	
 		InputStream inputStream		=	response.getEntity().getContent();
 		String content				=	readcontent(inputStream);
-		logger.debug("response=" + content);
+		logger.fine("response=" + content);
 		StringReader reader			=	new StringReader(content);
 		
 		CategoryXmlList categories	=	(CategoryXmlList)unmarshaller.unmarshal(reader);
-		logger.debug("categories size=" + categories.getCategories().size());
+		logger.log(Level.FINE,"categories size=" + categories.getCategories().size());
 		
 		return categories;
 		
@@ -170,11 +171,11 @@ public class NewCatalogRestServiceTest {
 		
 		CategoryXmlList categories	=	getCategoryList();
 		
-		logger.debug("response size=" + categories.getCategories().size());
-		logger.debug("request name=" + name);
+		logger.fine("response size=" + categories.getCategories().size());
+		logger.fine("request name=" + name);
 		
 		for (CategoryXml category:categories.getCategories()) {
-			logger.debug("response name=" + category.getName());
+			logger.log(Level.FINE,"response name=" + category.getName());
 			if (name.equals(category.getName())) {
 				return category;
 			}
