@@ -1,4 +1,4 @@
 java
 ====
 
-java samples
+Sandbox pour les essais java de la Java Team.
