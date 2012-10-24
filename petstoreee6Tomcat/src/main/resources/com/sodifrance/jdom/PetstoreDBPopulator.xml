@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+
+    <category
+        name="Fish"
+        description="Any of numerous cold-blooded aquatic vertebrates characteristically having fins, gills, and a streamlined body" >
+
+        <product
+            name="Angelfish"
+            description="Saltwater fish from Australia" >
+
+            <item
+                name="Large"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit ante, malesuada porta condimentum eget, tristique id magna. Donec ac justo velit. Suspendisse potenti. Donec vulputate vulputate molestie. Quisque vitae arcu massa, dictum sodales leo. Sed feugiat elit vitae ante auctor ultrices. Duis auctor consectetur arcu id faucibus. Curabitur gravida."
+                imagePath="fish1.jpg"
+                unitCost="10.00f"/>
+
+            <item
+                name="Thootless"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla pharetra dignissim. In imperdiet, lacus a vehicula dignissim, ante ligula euismod leo, non lobortis orci quam a nisl. Aliquam risus eros, molestie sit amet interdum nec, convallis malesuada leo. Quisque bibendum facilisis erat eget tincidunt. Phasellus pharetra gravida purus. Maecenas."
+                imagePath="fish1.jpg"
+                unitCost="10.00f"/>
+        </product>
+
+        <product
+            name="Tiger Shark"
+            description="Saltwater fish from Australia" >
+
+            <item
+                name="Spotted"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum iaculis sapien, eu fermentum eros feugiat a. Pellentesque ultricies mauris orci. Mauris interdum hendrerit felis vel dignissim. Phasellus ac sem sit amet ante laoreet volutpat. Sed sagittis venenatis ullamcorper. Vivamus non mollis nunc. Etiam mauris odio, tristique sed porta in."
+                imagePath="fish4.jpg"
+                unitCost="12.00f"/>
+
+            <item
+                name="Spotless"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit ultricies bibendum. Vestibulum vitae dui porttitor nibh dignissim pretium eu at odio. Proin ac nibh eget erat ullamcorper consequat ac cursus est. Donec sollicitudin interdum elit sed gravida. Integer lacus lacus, gravida eget vehicula ac, sagittis et dui. In et."
+                imagePath="fish4.jpg"
+                unitCost="12.00f"/>
+        </product>
+
+        <product
+            name="Koi"
+            description="Freshwater fish from Japan" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur, ligula eu malesuada tempus, risus tellus varius ligula, id auctor magna tellus quis dui. Integer ut neque ut libero aliquet hendrerit. Maecenas bibendum, magna sed vulputate tempor, tortor neque consequat nunc, id consectetur neque odio eget augue. Ut consectetur, nisl."
+                imagePath="fish3.jpg"
+                unitCost="12.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porta eros. Aliquam neque arcu, sodales eget rutrum a, luctus sit amet sem. Vestibulum ultricies dictum mi, eu sagittis lacus ultrices sit amet. Mauris nec interdum ipsum. Maecenas semper, magna sit amet commodo tempus, purus lectus pretium dui, sit amet."
+                imagePath="fish3.jpg"
+                unitCost="12.00f"/>
+        </product>
+
+        <product
+            name="Goldfish"
+            description="Freshwater fish from China" >
+
+            <item
+                name="Male Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac nunc mauris. Proin augue sem, imperdiet quis imperdiet vitae, egestas vitae quam. Nam id lectus nisi. In hac habitasse platea dictumst. Proin ullamcorper eros non diam accumsan ornare. Fusce posuere, nulla vel tempor molestie, lectus dui aliquet orci, in volutpat."
+                imagePath="fish2.jpg"
+                unitCost="12.00f"/>
+
+            <item
+                name="Female Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium ornare est ullamcorper porta. Nullam eleifend tincidunt justo nec ultrices. In vehicula pharetra turpis, nec consequat sapien tempus sit amet. Donec quis urna in odio luctus rhoncus. In metus lorem, ultricies vel vestibulum non, laoreet ac neque. Duis posuere, tortor."
+                imagePath="fish2.jpg"
+                unitCost="12.00f"/>
+        </product>
+    </category>
+
+    <category
+        name="Dogs"
+        description="A domesticated carnivorous mammal related to the foxes and wolves and raised in a wide variety of breeds" >
+
+        <product
+            name="Bulldog"
+            description="Friendly dog from England" >
+
+            <item
+                name="Spotless Male Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et lorem vel tellus aliquet pretium ut nec libero. Cras euismod tincidunt rutrum. Suspendisse nisl justo, vestibulum et commodo vel, ultricies placerat quam. Sed nisi orci, rhoncus ac accumsan eget, pretium ac purus. Nam et scelerisque mi. Vivamus luctus, massa eget."
+                imagePath="dog1.jpg"
+                unitCost="22.00f"/>
+
+            <item
+                name="Spotless Female Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus arcu sed sapien interdum porttitor. Nulla nunc magna, egestas sed laoreet nec, congue et felis. Donec rhoncus, est vitae tincidunt posuere, dolor nunc fermentum orci, ut varius velit ipsum a massa. Pellentesque habitant morbi tristique senectus et netus et malesuada."
+                imagePath="dog1.jpg"
+                unitCost="22.00f"/>
+        </product>
+
+        <product
+            name="Poodle"
+            description="Cute dog from France" >
+
+            <item
+                name="Spotted Male Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ipsum erat, tincidunt sit amet lacinia non, vestibulum elementum odio. Donec id lacus ante, id bibendum est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eu suscipit mauris. Vivamus dolor diam, pulvinar a consectetur at."
+                imagePath="dog2.jpg"
+                unitCost="32.00f"/>
+
+            <item
+                name="Spotted Female Puppy"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec justo orci, in faucibus lectus. Proin feugiat faucibus pellentesque. Etiam nec dolor justo, non egestas nisl. Etiam convallis orci nec felis pretium malesuada. Maecenas nec tortor erat. Cras accumsan eros sit amet nibh fringilla molestie. Suspendisse potenti. Nulla vulputate neque."
+                imagePath="dog2.jpg"
+                unitCost="32.00f"/>
+        </product>
+
+        <product
+            name="Dalmation"
+            description="Great dog for a fire station" >
+
+            <item
+                name="Tailed"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante massa, semper non tempor at, faucibus nec est. Aliquam aliquet, tortor ut egestas blandit, nisi urna elementum lectus, a porta dolor leo quis massa. Aliquam erat volutpat. Fusce sed eros et enim varius consequat. Nam molestie, neque quis commodo rhoncus."
+                imagePath="dog3.jpg"
+                unitCost="62.00f"/>
+
+            <item
+                name="Tailless"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac adipiscing nulla. Proin risus lectus, convallis eu sagittis scelerisque, fringilla ut odio. Suspendisse ultrices ullamcorper adipiscing. Proin ac suscipit tellus. Vivamus tempus nibh interdum ipsum ullamcorper at suscipit nibh mattis. Vivamus elementum volutpat ipsum eu tempus. Proin velit ligula, fringilla."
+                imagePath="dog3.jpg"
+                unitCost="62.00f"/>
+        </product>
+
+        <product
+            name="Golden Retriever"
+            description="Great family dog" >
+
+            <item
+                name="Tailed"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet velit id augue pellentesque tempor suscipit eu nisi. Nulla facilisi. Sed ultrices lectus in ligula viverra lacinia. Quisque et leo nisl. Suspendisse potenti. Donec semper malesuada ullamcorper. Vivamus fringilla nunc eget tellus condimentum ut dictum nisi euismod. Pellentesque habitant."
+                imagePath="dog4.jpg"
+                unitCost="82.00f"/>
+
+            <item
+                name="Tailless"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo odio. Phasellus suscipit auctor lectus eget luctus. Nam ultricies auctor augue vel feugiat. Nulla odio lectus, volutpat sit amet vestibulum id, convallis sit amet tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque."
+                imagePath="dog4.jpg"
+                unitCost="82.00f"/>
+        </product>
+
+        <product
+            name="Labrador Retriever"
+            description="Great hunting dog" >
+
+            <item
+                name="Tailed"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere porta risus, a bibendum enim pellentesque sit amet. Mauris imperdiet suscipit lectus, sed molestie orci posuere a. Fusce eleifend interdum nisi, nec vulputate velit rutrum ut. Nulla turpis ligula, fermentum ac tincidunt at, porttitor sit amet sem. Curabitur eget eros."
+                imagePath="dog5.jpg"
+                unitCost="100.00f"/>
+
+            <item
+                name="Tailless"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in diam sapien. Etiam sed dapibus velit. Phasellus gravida egestas congue. Etiam nec nunc non arcu facilisis ultrices. Curabitur et diam sed neque facilisis dignissim. Vestibulum accumsan viverra nunc, ac tincidunt nisi placerat sit amet. Nulla ac pellentesque justo. Aliquam pellentesque."
+                imagePath="dog5.jpg"
+                unitCost="100.00f"/>
+        </product>
+
+        <product
+            name="Chihuahua"
+            description="Great companion dog" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere porta risus, a bibendum enim pellentesque sit amet. Mauris imperdiet suscipit lectus, sed molestie orci posuere a. Fusce eleifend interdum nisi, nec vulputate velit rutrum ut. Nulla turpis ligula, fermentum ac tincidunt at, porttitor sit amet sem. Curabitur eget eros."
+                imagePath="dog6.jpg"
+                unitCost="100.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in diam sapien. Etiam sed dapibus velit. Phasellus gravida egestas congue. Etiam nec nunc non arcu facilisis ultrices. Curabitur et diam sed neque facilisis dignissim. Vestibulum accumsan viverra nunc, ac tincidunt nisi placerat sit amet. Nulla ac pellentesque justo. Aliquam pellentesque."
+                imagePath="dog6.jpg"
+                unitCost="100.00f"/>
+        </product>
+    </category>
+
+    <category
+        name="Reptiles"
+        description="Any of various cold-blooded, usually egg-laying vertebrates, such as a snake, lizard, crocodile, turtle" >
+
+        <product
+            name="Rattlesnake"
+            description="Doubles as a watch dog" >
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis ante et nunc scelerisque aliquet. Phasellus sed auctor purus. Cras tempus lacus eget felis viverra scelerisque. Sed ac tellus vitae nisl vehicula feugiat ac vitae dolor. Duis interdum lorem quis risus ullamcorper id cursus magna pharetra. Sed et nisi odio."
+                imagePath="reptile1.jpg"
+                unitCost="20.00f"/>
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra tempus vulputate. Proin at nibh at felis feugiat fringilla. Fusce suscipit malesuada urna posuere suscipit. Integer non quam orci, vel adipiscing odio. Aenean at turpis nisi, a ullamcorper massa. Integer consectetur libero a lorem blandit pretium. Curabitur a sodales justo."
+                imagePath="reptile1.jpg"
+                unitCost="20.00f"/>
+        </product>
+
+        <product
+            name="Iguana"
+            description="Friendly green friend" >
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum, nisi vitae fringilla ultrices, est ipsum faucibus ipsum, sit amet dapibus erat ipsum et arcu. Sed euismod, mauris suscipit placerat semper, tortor magna cursus nulla, id elementum dui dolor sit amet nunc. Pellentesque a interdum lectus. Mauris in augue eu."
+                imagePath="lizard1.jpg"
+                unitCost="150.00f"/>
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dapibus arcu. Nunc at dui sem, in fringilla velit. Suspendisse mauris felis, molestie scelerisque viverra sit amet, dapibus eu diam. Curabitur egestas lectus et ligula pharetra in sollicitudin neque tristique. Nunc suscipit scelerisque nunc, vitae consectetur justo sodales ullamcorper. Nulla."
+                imagePath="lizard1.jpg"
+                unitCost="160.00f"/>
+        </product>       
+    </category>
+
+    <category
+        name="Cats"
+        description="Small carnivorous mammal domesticated since early times as a catcher of rats and mice and as a pet and existing in several distinctive breeds and varieties" >
+
+        <product
+            name="Manx"
+            description="Great for reducing mouse populations" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis scelerisque urna. Sed id nunc quis nisl scelerisque scelerisque sit amet id lorem. Sed rutrum arcu sed sem semper id eleifend nulla feugiat. Praesent faucibus dignissim lectus tincidunt lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
+                imagePath="cat1.jpg"
+                unitCost="120.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra nunc vitae libero ultricies lobortis. Duis magna nunc, tincidunt sit amet sagittis et, lobortis volutpat risus. Sed gravida turpis sit amet arcu tincidunt convallis. Nunc vulputate commodo mi non blandit. Etiam eu libero id libero aliquet pretium. Lorem ipsum dolor."
+                imagePath="cat1.jpg"
+                unitCost="120.00f"/>
+        </product>
+
+        <product
+            name="Persian"
+            description="Friendly house cat, doubles as a princess" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed est in tortor pharetra fermentum. Pellentesque nulla augue, venenatis ut viverra vel, dignissim sit amet ante. Aliquam erat volutpat. Aenean lectus odio, blandit aliquam sollicitudin a, pulvinar a felis. Phasellus vitae libero et lacus volutpat tristique. Aliquam tortor lacus, pulvinar."
+                imagePath="cat2.jpg"
+                unitCost="70.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla iaculis nunc et hendrerit. Curabitur malesuada felis non velit ultrices lacinia. Vivamus hendrerit tortor et tortor faucibus vehicula. Pellentesque pellentesque, quam at viverra tristique, lacus nibh euismod erat, vel vestibulum purus turpis eget nisi. Donec suscipit ligula tortor, a suscipit."
+                imagePath="cat2.jpg"
+                unitCost="90.00f"/>
+        </product>
+    </category>
+
+    <category
+        name="Birds"
+        description="Any of the class Aves of warm-blooded, egg-laying, feathered vertebrates with forelimbs modified to form wings" >
+
+        <product
+            name="Amazon Parrot"
+            description="Great companion for up to 75 years" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo ligula, volutpat ut adipiscing sed, lobortis vel lacus. Etiam commodo aliquet libero, sit amet pretium risus scelerisque luctus. Suspendisse sit amet nulla nibh, in mollis risus. Curabitur convallis mattis felis, non malesuada justo pretium sed. Nam vestibulum, urna in consequat."
+                imagePath="bird2.jpg"
+                unitCost="120.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae turpis ut erat hendrerit sollicitudin. Curabitur auctor neque a enim scelerisque mattis. Mauris in mi nibh, et placerat lorem. Nunc semper, quam vitae semper condimentum, odio arcu sagittis ligula, eu posuere arcu nibh a quam. Aliquam porta dictum eros auctor."
+                imagePath="bird2.jpg"
+                unitCost="120.00f"/>
+        </product>
+
+        <product
+            name="Finch"
+            description="Great stress reliever" >
+
+            <item
+                name="Male Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lectus sit amet augue mattis malesuada. Maecenas justo justo, auctor sed consectetur et, pulvinar et diam. Nam felis mi, auctor ornare accumsan sed, pharetra nec arcu. Aliquam tincidunt nisi feugiat dui commodo dapibus. Nullam eget augue odio. Duis mauris nibh."
+                imagePath="bird1.jpg"
+                unitCost="75.00f"/>
+
+            <item
+                name="Female Adult"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim vehicula tellus. Vestibulum id diam eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sit amet sem at ligula pretium fermentum. Suspendisse potenti. Phasellus rhoncus consequat augue, ac feugiat felis gravida nec. Aliquam at."
+                imagePath="bird1.jpg"
+                unitCost="80.00f"/>
+        </product>
+    </category>
+
+</catalog>

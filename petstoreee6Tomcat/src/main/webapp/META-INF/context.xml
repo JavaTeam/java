@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>   
+    <!-- DEFINITION RESOURCES DB TOMCAT -->
+	<Resource name="jdbc/JPetStoreDB" auth="Container"
+	          type="javax.sql.DataSource" username="app" password="app"
+	          driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+	          url="jdbc:derby:Databases/JPetStoreDB;create=true"
+	          maxActive="8" maxIdle="4"/>    
+
+	<!-- DEFINITION BEAN MANAGER CDI -->
+	<Resource name="BeanManager"
+	          auth="Container"
+	      	  type="javax.enterprise.inject.spi.BeanManager"
+	      	  factory="org.jboss.weld.resources.ManagerObjectFactory"/>
+</Context>
