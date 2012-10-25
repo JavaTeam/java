@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    
+    <customer 
+        firstname="Marc"
+        lastname="Fleury"
+        login="marc"
+        password="marc"
+        email="marc@jboss.org"
+        street="65 Ritherdon Road"
+        city="Los Angeles"
+        zipcode="56421"
+        country="USA" />
+    
+    <customer 
+        firstname="Bill"
+        lastname="Gates"
+        login="bill"
+        password="bill"
+        email="bill.gates@microsoft.com"
+        street="27 West Side"
+        city="Alhabama"
+        zipcode="8401"
+        country="USA" />
+    
+    
+      <customer 
+        firstname="Steve"
+        lastname="Jobs"
+        login="jobs"
+        password="jobs"
+        email="steve.jobs@apple.com"
+        street="154 Star Boulevard"
+        city="San Francisco"
+        zipcode="5455"
+        country="USA" />
+      
+      <customer 
+        firstname="User"
+        lastname="User"
+        login="user"
+        password="user"
+        email="user@petstore.org"
+        street="Petstore"
+        city="Land"
+        zipcode="666"
+        country="Nowhere" />
+      
+      
+       <customer 
+        firstname="Admin"
+        lastname="Admin"
+        login="admin"
+        password="admin"
+        email="admin@petstore.org"
+        street="Petstore"
+        city="Land"
+        zipcode="666"
+        country="Nowhere" />
+    
+    
+</customers>

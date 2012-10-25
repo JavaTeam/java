@@ -39,9 +39,6 @@ public class CatalogController extends Controller implements Serializable {
     @Inject
     private CatalogService catalogService;
     
-    @Inject
-    private transient DBPopulatorTomcat populatorDb;
-
     private String categoryName;
     private Long productId;
     private Long itemId;
@@ -75,27 +72,7 @@ public class CatalogController extends Controller implements Serializable {
     public String doSearch() {
         items = catalogService.searchItems(keyword);
         return "searchresult.faces?keyword=" + keyword + "&faces-redirect=true";
-    }
-
-    public String populateDb() {   		
-    		try {
-    			populatorDb.populateDb();
-    		} catch (ParserConfigurationException e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		} catch (SAXException e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		} catch (IOException e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		} catch (ConstraintViolationException e) {
-    			for(ConstraintViolation constraintViolation : e.getConstraintViolations()) {
-    				System.out.println(constraintViolation.getMessage());
-    			}
-    		}
-    	return "main.faces";
-    }
+    }   
     
     // ======================================
     // =         Getters & setters          =

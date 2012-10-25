@@ -15,20 +15,17 @@
         <class>org.agoncal.application.petstore.domain.Order</class>
         <class>org.agoncal.application.petstore.domain.OrderLine</class>
         <class>org.agoncal.application.petstore.domain.Product</class>
-        
-        
-        
-        
+               
         
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:derby:Databases/JPetStoreDB" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:Databases/JPetStoreDB;create=true" />
             <property name="javax.persistence.jdbc.user" value="app" />
             <property  name="javax.persistence.jdbc.password" value="app" />
       
             <!-- Properties for EclipseLink -->
             <property name="eclipselink.target-database" value="DERBY"/>
-<!--             <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
             <property name="eclipselink.logging.level" value="INFO"/>           
         </properties>
     </persistence-unit>
