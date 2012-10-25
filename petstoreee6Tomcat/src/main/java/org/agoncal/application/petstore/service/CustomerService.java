@@ -54,7 +54,10 @@ public class CustomerService implements Serializable {
         if (customer == null)
             throw new ValidationException("Customer object is null");
 
+        em.getTransaction().begin();
         em.persist(customer);
+        em.flush();
+        em.getTransaction().commit();
 
         return customer;
     }
@@ -96,19 +99,27 @@ public class CustomerService implements Serializable {
     public Customer updateCustomer(final Customer customer) {
 
         // Make sure the object is valid
-        if (customer == null)
+        if (customer == null) {
             throw new ValidationException("Customer object is null");
+        }
 
         // Update the object in the database
+        em.getTransaction().begin();
         em.merge(customer);
+        em.flush();
+        em.getTransaction().commit();
 
         return customer;
     }
 
     public void removeCustomer(final Customer customer) {
-        if (customer == null)
+        if (customer == null) {
             throw new ValidationException("Customer object is null");
-
+        }
+        
+        em.getTransaction().begin();
         em.remove(em.merge(customer));
+        em.flush();
+        em.getTransaction().commit();
     }
 }

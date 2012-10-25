@@ -71,14 +71,22 @@ public class CatalogService implements Serializable {
         if (category == null)
             throw new ValidationException("Category object is null");
 
-        return em.merge(category);
+        em.getTransaction().begin();
+        Category categoryMerged = em.merge(category);
+        em.flush();
+        em.getTransaction().commit();
+        
+        return categoryMerged;
     }
 
     public void removeCategory(Category category) {
         if (category == null)
             throw new ValidationException("Category object is null");
 
+        em.getTransaction().begin();
         em.remove(em.merge(category));
+        em.flush();
+        em.getTransaction().commit();
     }
 
     public void removeCategory(Long categoryId) {
@@ -117,10 +125,16 @@ public class CatalogService implements Serializable {
         if (product == null)
             throw new ValidationException("Product object is null");
 
-        if (product.getCategory() != null && product.getCategory().getId() == null)
+        em.getTransaction().begin();
+        
+        if (product.getCategory() != null && product.getCategory().getId() == null) {
             em.persist(product.getCategory());
+        }
 
         em.persist(product);
+        
+        em.flush();
+        em.getTransaction().commit();
         return product;
     }
 
@@ -128,14 +142,22 @@ public class CatalogService implements Serializable {
         if (product == null)
             throw new ValidationException("Product object is null");
 
-        return em.merge(product);
+        em.getTransaction().begin();
+        Product productMerged = em.merge(product);
+        em.flush();
+        em.getTransaction().commit();
+        
+        return productMerged;
     }
 
     public void removeProduct(Product product) {
         if (product == null)
             throw new ValidationException("Product object is null");
 
+        em.getTransaction().begin();
         em.remove(em.merge(product));
+        em.flush();
+        em.getTransaction().commit();
     }
 
     public void removeProduct(Long productId) {
@@ -178,14 +200,20 @@ public class CatalogService implements Serializable {
     public Item createItem(Item item) {
         if (item == null)
             throw new ValidationException("Item object is null");
-
+        
+        em.getTransaction().begin();
         if (item.getProduct() != null && item.getProduct().getId() == null) {
             em.persist(item.getProduct());
-            if (item.getProduct().getCategory() != null && item.getProduct().getCategory().getId() == null)
+            if (item.getProduct().getCategory() != null && item.getProduct().getCategory().getId() == null) {
                 em.persist(item.getProduct().getCategory());
+            }
         }
 
         em.persist(item);
+        
+        em.flush();
+        em.getTransaction().commit();
+        
         return item;
     }
 
@@ -193,19 +221,28 @@ public class CatalogService implements Serializable {
         if (item == null)
             throw new ValidationException("Item object is null");
 
-        return em.merge(item);
+        em.getTransaction().begin();
+        Item itemMerged = em.merge(item);
+        em.flush();
+        em.getTransaction().commit();
+        
+        return itemMerged;
     }
 
     public void removeItem(Item item) {
         if (item == null)
             throw new ValidationException("Item object is null");
 
+        em.getTransaction().begin();
         em.remove(em.merge(item));
+        em.flush();
+        em.getTransaction().commit();
     }
 
     public void removeItem(Long itemId) {
-        if (itemId == null)
+        if (itemId == null) {
             throw new ValidationException("itemId is null");
+        }
 
         removeItem(findItem(itemId));
     }

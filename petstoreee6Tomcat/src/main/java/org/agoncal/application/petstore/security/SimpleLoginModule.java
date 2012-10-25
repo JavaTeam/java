@@ -46,7 +46,7 @@ public class SimpleLoginModule implements LoginModule {
         }
         try {
             Context context = new InitialContext();
-            beanManager = (BeanManager) context.lookup("java:comp/BeanManager");
+            beanManager = (BeanManager) context.lookup("java:comp/env/BeanManager");
             Bean<?> bean = beanManager.getBeans(CustomerService.class).iterator().next();
             CreationalContext cc = beanManager.createCreationalContext(bean);
             customerService = (CustomerService) beanManager.getReference(bean, CustomerService.class, cc);

@@ -10,8 +10,10 @@ public class DBPopulatorTomcatProducer {
 	
 	@Produces
 	public DBPopulatorTomcat createPetstorePopulator() {
-		InputStream stream = DBPopulatorTomcat.class.getResourceAsStream("/com/sodifrance/jdom/PetstoreDBPopulator.xml");
-		return new DBPopulatorTomcat(stream);
+		InputStream catalogStream = DBPopulatorTomcat.class.getResourceAsStream("/com/sodifrance/petstore/database/data/PetstoreCatalog.xml");
+		InputStream customersStream = DBPopulatorTomcat.class.getResourceAsStream("/com/sodifrance/petstore/database/data/PetstoreDefaultCustomers.xml");
+		
+		return new DBPopulatorTomcat(catalogStream, customersStream);
 	}
 	
 }

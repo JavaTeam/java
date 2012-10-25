@@ -36,8 +36,9 @@ public class OrderService implements Serializable {
     public Order createOrder(final Customer customer, final CreditCard creditCard, final List<CartItem> cartItems) {
 
         // OMake sure the object is valid
-        if (cartItems == null || cartItems.size() == 0)
+        if (cartItems == null || cartItems.size() == 0) {
             throw new ValidationException("Shopping cart is empty"); // TODO exception bean validation
+        }
 
         // Creating the order
         Order order = new Order(em.merge(customer), creditCard, customer.getHomeAddress());
@@ -51,7 +52,10 @@ public class OrderService implements Serializable {
         order.setOrderLines(orderLines);
 
         // Persists the object to the database
+        em.getTransaction().begin();
         em.persist(order);
+        em.flush();
+        em.getTransaction().commit();
 
         return order;
     }
@@ -72,6 +76,9 @@ public class OrderService implements Serializable {
         if (order == null)
             throw new ValidationException("Order object is null");
 
+        em.getTransaction().begin();
         em.remove(em.merge(order));
+        em.flush();
+        em.getTransaction().commit();
     }
 }
